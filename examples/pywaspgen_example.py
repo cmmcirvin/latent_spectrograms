@@ -2,7 +2,7 @@ import random
 
 from sklearn.datasets import make_blobs
 
-from visualize import Visualizer
+from latent_spectrograms.visualize import Visualizer
 
 try:
     from pywaspgen.burst_def import BurstDef
