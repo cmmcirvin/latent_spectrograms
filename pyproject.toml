@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latent_spectrograms"
+version = "0.1.0"
+description = "A small visualizer for IQ data in the latent space of machine learning models"
+authors = [
+    { name = "Caleb McIrvin", email = "calebmcirvin111@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "scikit-image",
+]
+
+[project.optional-dependencies]
+examples = [
+    "pywaspgen @ git+https://github.com/vtnsi/pywaspgen.git",
+    "scikit-learn"
+]
